@@ -529,7 +529,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 </div>
   
 <div class="lang-switcher">
-    <a href="index_en.html" class="flag-link">
+    <a href="en" class="flag-link">
         <img src="https://flagcdn.com/w160/gb.png" alt="English">
     </a>
 </div>
