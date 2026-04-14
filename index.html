@@ -211,7 +211,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   .portfolio-grid {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 2.5rem; /* Zvětšená mezera mezi sloupci i řádky */
+    gap: 2.5rem; 
   }
 
   .project-card {
@@ -223,7 +223,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     flex-direction: column;
     height: 100%;
     box-sizing: border-box;
-    margin-bottom: 0.5rem; /* Pojistka proti dotýkání */
+    margin-bottom: 0.5rem; 
   }
 
   .project-image-wrap {
@@ -366,7 +366,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     line-height: 1.6;
   }
 
-  /* RESPONSIVE */
+
 
   @media (max-width: 900px) {
     .hero,
@@ -463,7 +463,45 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       padding: 3rem 1.5rem;
     }
   }
+
+
+
+.lang-switcher {
+    position: fixed;   
+    top: 20px;
+    right: 20px;
+    z-index: 1000;     
+}
+
+.flag-link {
+    display: block;
+    width: 40px;       
+    height: 40px;
+    border-radius: 50%; 
+    overflow: hidden;   
+    border: 2px solid #fff;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    transition: transform 0.2s ease;
+}
+
+.flag-link:hover {
+    transform: scale(1.1); 
+}
+
+.flag-link img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  
+}
+
+
 </style>
+
+<div class="lang-switcher">
+    <a href="index_en.html" class="flag-link">
+        <img src="https://flagcdn.com/w160/gb.png" alt="English">
+    </a>
+</div>
 
 <section class="page-section hero">
   <div class="hero-text">
@@ -503,13 +541,11 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       <h2 class="about-title">Kdo jsem</h2>
 
       <p>
-        Jsem magisterská studentka geoinformatiky na Univerzitě Palackého.
-        Baví mě 3D modelování, mapy a hledání souvislostí mezi daty. 
+        Jsem studentka magisterského studia geoinformatiky na Univerzitě Palackého. Zajímám se o 3D modelování, tvorbu map a analýzu dat, ve kterých ráda hledám souvislosti.
       </p>
 
       <p>
-        Zkušenosti mám z projektů pro univerzitu, veřejnou správu i popularizační akce.
-        Ráda pracuji v týmu i samostatně, jednou z mých předností je dobrá organizace času i práce. 
+        Zkušenosti získávám při práci na projektech pro univerzitu, veřejnou správu i v rámci popularizačních aktivit. Umím pracovat samostatně i v týmu a mezi mé silné stránky patří dobrá organizace času i práce.
       </p>
     </div>
   </div>
